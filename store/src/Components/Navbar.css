@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    width: fixed;
+}
+
+li {
+    list-style: none;
+    white-space: nowrap; 
+}
+
+.navig{
+    display: absolute;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 10vh;
+    line-height: 10vh;
+    background-color:rgba(70, 143, 43, 0.773);
+    border-radius: 30px;
+   
+}
+.contm{
+    position: relative;
+    bottom: 60px;
+    left: 140px;
+   
+}
+.public{
+    font-size: 30px;
+    color:whitesmoke;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    /* box-shadow: rgba(50,0,93,0.23) 0 30px 30px -20px; */
+}  
+
+.map{
+        font-size: 2.5rem;
+        text-decoration: none;
+      }
+
+/* .container{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+.nav-links li
+{
+    font-size: 20px;
+    padding: 0 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.lin{
+    text-decoration: none;
+    color: whitesmoke;
+    padding-bottom: 30px;
+    text-decoration: none;
+}
+ .lin:hover{
+    color: aliceblue;
+    text-decoration: underline;
+} 
+
+button{
+    border: none;
+    background: none;
+    font-size: 15px;
+    
+}
+.menu{
+    display: none;
+    right: 130px;
+}
+
+
+@media (max-width:768px){
+    .lin{
+        color: grey;
+        font-size: 20px;
+    }
+    .lin:hover{
+        text-decoration: none;
+    }
+
+.nav-links{
+    display: none;
+}
+.nav-links-mobile{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50,0,93,0.23) 0 30px 30px -20px;
+    left: -130px;
+    padding-top: 20px;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background: aliceblue; 
+}
+
+ul li{
+    padding: 50px;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+}
+ul li:hover{
+        color: whitesmoke;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: rgba(84, 186, 48, 0.629);
+}
+.menu{
+    position: absolute;
+    display: block;
+    right: 160px;
+    z-index: 2;
+}
+}

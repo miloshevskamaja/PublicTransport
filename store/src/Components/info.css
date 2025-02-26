@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+/* body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+.cel{
+    padding-top: 30px; 
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    text-align: center;
+}
+
+.linija{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.linija::after{
+    content: '';
+    position:absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.cont{
+    padding: 10px 40px;
+    position: relative;
+    /* rgba(85, 186, 48, 0.689) */
+    background-color: inherit;
+    width: 50%;
+}
+
+.cont::after{
+    content:'';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -10px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.lev{
+    left:0;
+}
+.desen{
+    left: 50%;
+}
+
+.lev::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top:22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+.desen::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top:22px;
+    width: 0;
+    z-index: 1;
+    left: 20px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 10px;
+    border-color: transparent white transparent transparent;
+}
+.desen::after{
+    left:-16px;
+}
+.sodrzina{
+    padding: 20px 30px;
+    background-color: rgba(85, 186, 48, 0.689) ;
+    position: relative;
+    border-radius: 6px;
+}
+
+@media screen and (max-width:600px) {
+   .linija::after{
+    left: 30px;
+    z-index: 0;
+   }
+    .cont{
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        z-index: 1;
+    }
+    .cont::before{
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    .lev::after, .desen::after{
+        left:15px;
+    }
+    .desen{
+        left: 0%;
+    }
+}

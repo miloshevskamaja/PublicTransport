@@ -1,0 +1,43 @@
+
+.crveno{
+    background-color: lightgray;
+    position:relative;
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    /* padding-top: 5%;
+    padding-bottom: 5%; */
+    text-decoration: dashed;
+    border-radius: 30px;
+    padding: 40px 25px;
+
+}
+h7{
+    position: absolute;
+    z-index: 1;
+    left:47%;
+    font-size: 20px;
+    background-color: red;
+    color:aliceblue;
+    border-radius: 10px;
+    padding: 10px 10px;
+    bottom:240px;
+}
+
+.error{
+   
+        background-image: url("./bm2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100rem;
+        min-height: 100vh;
+        width: 100%;
+        /* padding: 0 2 rem; */
+        padding-bottom: 70px;
+        margin: 0 auto;
+    
+
+}
